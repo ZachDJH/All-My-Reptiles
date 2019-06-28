@@ -2,7 +2,7 @@
 $font-stack: Arial, Helvetica, cursive, Times New Roman, Oswald, sans-serif;
 
 @mixin background-props() {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255, 1);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -46,9 +46,9 @@ $box-space: 80%;
 
 $shadow-box: 1px 1px 10px;
 
-#home {background-image: url(../../david-clode-691484-unsplash.jpg);}
+#home {background-image: url(../../reptiles/david-clode-691484-unsplash.jpg);}
 
-#sales {background-image: url(../../zachary-spears-579010-unsplash.jpg);}
+#sales {background-image: url(../../amphibians/zachary-spears-579010-unsplash.jpg);}
 
 html {
 	width: 100%;
@@ -59,27 +59,27 @@ html {
 	
 	body {
 	  width: 100%;
-	  padding: 0;
-	  margin: 0;
+	  padding: 0%;
+	  margin: 0%;
   }
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 1088px) and (max-width: 2000px) {
 	#home {
-		background-image: url(../../mobile_background_2.jpg);
+		background-image: url(../../reptiles/mobile_background_2.jpg);
 		@include background-props();
 		background-position: left 25px;
 	}
 	@media screen and (width <= 40rem) {
 		#home {
-			background-image: url(../../mobile_background.jpg);
+			background-image: url(../../reptiles/mobile_background.jpg);
 			@include background-props();
 			background-position: center;
 		}
 	}
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 200px) and (max-width: 1200px) {
 	#navbar li {
 		display: none;
 	}	
@@ -89,11 +89,11 @@ nav {
   position: sticky;
 	top: -10px;
 	background-color: #ffffff;
-	width: 99.99%;
+	width: 100%;
 	padding: 0.01% 0 0 0;
 	margin-top: -0.6%;
 	box-shadow: 2px 2px 6px 2px;
-  z-index: 50;
+    z-index: 50;
 	
 }
 
@@ -132,7 +132,7 @@ nav a {
 	text-shadow: 1px 5px 2px #889ABB;
 }
 
-@media screen and (width >= 70rem) {
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
 	li#navbrand {
 	font-size: 0.9rem;
 	display: inline;
@@ -157,7 +157,7 @@ nav a {
   }
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 200px) and (max-width: 1200px) {
 	li#navbrand  {
 	display: inline;
 	display: contents;
@@ -187,7 +187,7 @@ nav a {
     	flex-wrap: nowrap;
     	flex-direction: row;
     }
-    @media screen and (width <= 30rem) {
+    @media screen and (min-width: 600px) and (max-width: 800px) {
       span#mobile-bar-button {
     	  display: contents;
     	  display: flex;
@@ -217,35 +217,37 @@ nav a {
    }
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 200px) and (max-width: 1200px) {
   #mobile-nav-menu {	
 	display: flex;
 	flex: 1;
 	position: absolute;
 	justify-content: flex-start;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: column;
 	background-color: #fff;
 	list-style: none;
 	margin-top: 0.4vh;
 	box-shadow: 4px 4px 8px;
 	width: 250px;
-	height: 450px;
+	height: 440px;
   }
 
   #mobile-nav-menu li {
   	transition: 0.5s;
-	border-radius: 8px;
+	border-radius: 1px;
 	font-size: 1.2rem;
-	margin-top: 12px;
+	margin-top: 40px;
+	width: 1%;
+	padding-bottom: 20px;
 	justify-content: flex-start;
   }
 
   #mobile-nav-menu a {
 	justify-content: center;
-	width: 80%;
-	margin: 10px 0 15px 0;
-	height: 37px;
+	width: 1%;
+	margin: 1px 0 1px 0;
+	height: 0px;
 	border-bottom: 2px solid black;
   }
 
@@ -254,7 +256,7 @@ nav a {
   	top: 0px;
   }
 
-  @media (orientation: landscape) {
+  @media screen and (orientation: landscape) {
   	#mobile-nav-menu {
   		display: flex;
 	    flex: 1;
@@ -266,47 +268,48 @@ nav a {
 	    list-style: none;
 	    margin-top: 0.4vh;
 	    box-shadow: 4px 4px 8px;
-  		width: 750px;
-  		height: 220px;
+  		width: 450px;
+  		height: 440px;
   	}
 
-  	#mobile-nav-menu a {
+  	li#mobile-nav-menu a {
 	    justify-content: center;
-	    width: 30%;
-	    margin: 10px 0 15px 0;
-	    height: 37px;
+	    width: 3%;
+	    margin: 1px 0 5px 0;
+	    height: 7px;
 	    border-bottom: 2px solid black;
     }
   }
 
-  @media screen and (width <= 30rem) {
-  	#mobile-nav-menu {
+  @media screen and (min-width: 200px) and (max-width: 400px) {
+  	#mobile-nav-menu > ul {
 	 display: flex;
 	 flex: initial;
      position: absolute;
 	 justify-content: flex-start;
-	 flex-wrap: wrap;
+	 flex-wrap: nowrap;
 	 flex-direction: column;
 	 background-color: #fff;
 	 list-style: none;
 	 margin-top: 0.5vw;
 	 box-shadow: 4px 4px 8px;
-	 width: 280px;
-	 height: 470px;
+	 width: 250px;
+	 height: 440px;
    }
 
   #mobile-nav-menu li {
 	 border-radius: 8px;
-	 font-size: 1.0rem;
+	 font-size: 1.2rem;
 	 margin-top: 5px;
+	 margin: 40px 0 0 0;
 	 justify-content: flex-start;
    }
 
   #mobile-nav-menu a {
 	 justify-content: center;
-	 width: 80%;
-	 margin: 15px 0 15px 0;
-	 height: 35px;
+	 width: 1px;
+	 margin: 1px 0 1px 0;
+	 height: 5px;
 	 border-bottom: 2px solid black;
     }
   }
@@ -351,6 +354,13 @@ nav a {
 	margin-right: auto;
 }
 
+.section-line {
+	border-bottom: 2px solid black;
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
 main {
 	display: flex;
 	justify-content: center;
@@ -364,7 +374,7 @@ div.space-box {
     margin-right: auto;
 }
 
-@media screen and (width >= 70rem) {
+@media screen and (min-width: 1088px) and (max-width: 1900px) {
   #main-content {
 	background-color: #ffffff;
 	width: 70%;
@@ -377,7 +387,7 @@ div.space-box {
   }
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 650px) and (max-width: 1088px) {
   #main-content {
 	background-color: #ffffff;
     width: 80%;
@@ -386,19 +396,20 @@ div.space-box {
 	margin-top: 6.5rem;
     box-shadow: 5px 5px 10px;
   }
-  @media screen and (width <= 30rem) {
+}
+
+ @media all and (min-width: 200px) and (max-width: 650px) {
     #main-content {
 	  background-color: #ffffff;
-	  width: 97vw;
+	  width: 98%;
 	  border-radius: 8px 8px 8px 8px;
 	  font-size: 1.0rem;
 	  margin-top: 8.5rem;
       box-shadow: 5px 5px 10px;
     }
   }
-}
 
-@media screen and (width >= 70rem) {
+@media screen and (min-width: 1088px) and (max-width: 2000px) {
   table {
     thead {
         background-color: #e6e6e6;
@@ -421,7 +432,7 @@ div.space-box {
   }
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 650px) and (max-width: 1088px) {
   table {
   	thead {
   		background-color: #b3b3b3;
@@ -442,13 +453,29 @@ div.space-box {
     margin-left: auto;
     margin-right: auto;
   }
- @media screen and (width < 30rem) {
+}
+
+ @media screen and (min-width: 200px) and (max-width: 650px) {
   	table {
 	  font-size: 1.0rem;
 	  border: 1px solid black;
 	  width: 97.2vw;
 	  border-collapse: collapse;
+	  	th {
+  		background-color: #e6e6e6;
+  	}
+  	td {
+	    background-color: #ffffff;
+	    border: 1px solid black;
     }
+    table-layout: fixed;
+    font-family: Oswald;
+	font-size: 1.0rem;
+	border: 1px solid black;
+	width: 100%;
+	border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -464,20 +491,20 @@ div.space-box {
   font-family: Oswald;
 }
 
-@media screen and (width >= 70rem) {
+@media screen and (min-width: 1080px) and (max-width: 2000px) {
   .img-size {
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (width <= 50rem) {
+  @media screen and (min-width: 600px) and (max-width: 1080px) {
     .img-size {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
   }
-  @media screen and (width <= 30rem) {
+  @media screen and (min-width: 200px) and (max-width: 600px) {
     .img-size {
       width: 100%;
       margin-left: auto;
@@ -499,10 +526,101 @@ div.space-box {
 
 .has-shadow {
 	box-shadow: $shadow-box;
+	display: flex;
 }
 
 .scroll-y {
 	@include scroll-y-box();
+}
+
+.has-float-left {
+	/*float: left;*/
+	margin-right: 80%;
+}
+
+.has-float-right {
+	margin-left: 60%;
+}
+
+#interests {
+	padding-top: 10%;
+	padding-bottom: 0%;
+}
+
+.is-clear {
+	clear: both;
+}
+
+.text {
+	position: absolute;
+}
+
+.left {
+	left: 20%;
+}
+
+.right {
+	right: 20%;
+}
+
+.block {
+	display: block;
+}
+
+.background {
+	background-color: #f2f2f2;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 2000px) {
+ .relative-left {
+	 position: absolute;
+	 text-align: center;
+	 right: 55%;
+	 top: 35%;
+	 z-index: 10;
+  }
+
+ .relative-right {
+	 position: absolute;
+	 text-align: center;
+	 left: 55%;
+	 top: 35%;
+	 z-index: 10;
+  }
+
+  .interest-text {
+	 font-size: 1.5rem;
+	 font-family: Oswald;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+	.relative-left {
+	  position: absolute;
+	  text-align: center;
+	  right: 60%;
+	  top: -5%;
+	  z-index: 10;
+  }
+    .relative-right {
+	  position: absolute;
+	  text-align: center;
+	  left: 50%;
+	  top: -5%;
+	  z-index: 10;
+  }
+    .interest-text {
+	  font-size: 1.3rem;
+	  font-family: Oswald;
+  }
+
+  @media screen and (min-width: 150px) and (max-width: 300px) {
+  	.interest-text {
+  		font-size: 0.9rem;
+  		font-family: Oswald;
+  	}
+  }  
 }
 
 /*
@@ -522,7 +640,7 @@ div.space-box {
 	height: auto;
 }
 */
-@media screen and (width >= 70rem) {
+@media screen and (min-width: 1080px) and (max-width: 2000px) {
   .text-box {
 	  position: absolute;
 	  text-align: center;
@@ -530,8 +648,8 @@ div.space-box {
 	  z-index: 25;
 	  bottom: 0;
 	  left: 25%;
-  	  padding-left: 40px;
-	  padding-right: 40px;
+  	  padding-left: 50px;
+	  padding-right: 50px;
 	  padding-top: 20px;
 	  padding-bottom: 20px;
 	  font-family: Oswald;
@@ -543,6 +661,7 @@ div.space-box {
     white-space: nowrap;
     margin-left: 0.5%;
     margin-right: 0.5%;
+    margin-top: 5px;
     position: relative;
   }
 
@@ -554,7 +673,7 @@ div.space-box {
   }
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 100px) and (max-width: 1080px) {
   	.text-box {
 	  position: absolute;
 	  text-align: center;
@@ -562,8 +681,8 @@ div.space-box {
 	  z-index: 25;
 	  bottom: 0;
 	  left: 40%;
-  	  padding-left: 40px;
-	  padding-right: 40px;
+  	  padding-left: 2px;
+	  padding-right: 2px;
 	  padding-top: 20px;
 	  padding-bottom: 20px;
 	  font-family: Oswald;
@@ -574,6 +693,7 @@ div.space-box {
       white-space: nowrap;
       margin-left: 0.5%;
       margin-right: 0.5%;
+      margin-top: 10px;
       position: relative;
     }
 
@@ -615,18 +735,18 @@ div.space-box {
 	justify-content: center;
 }
 
-@media screen and (width >= 70rem) {
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
 	.has-flex {
 	    @include flex-row-center();
     }
-  @media screen and (width <= 60rem) {
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
 	  .has-flex {
 		  @include flex-column-center();
 	}
   }
 }
 
-@media screen and (width >= 70rem) {
+@media screen and (min-width: 1080px) and (max-width: 2000px) {
   .space-box {
 	  width: 100%;
   }
@@ -637,7 +757,7 @@ div.space-box {
   }
 }
 
-@media screen and (width >= 40rem) {
+@media screen and (min-width: 900px) and (max-width: 2000px) {
   #footer {
 	background-color: #ffffff;
 	padding-bottom: 1%;
@@ -651,12 +771,12 @@ div.space-box {
   }
 }
 
-@media screen and (width <= 70rem) {
+@media screen and (min-width: 200px) and (max-width: 900px) {
   #footer {
 	background-color: #ffffff;
 	padding-bottom: 1%;
 	padding-top: 1%;
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;

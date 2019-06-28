@@ -6,7 +6,6 @@ function mobileMenu(mobileButton) {
 	function menuOpen() {
 		menuFlag = 1;
 		let menu = document.querySelector("ul.is-hidden");
-		console.log(document.querySelector("ul.is-hidden"));
 		menu.setAttribute("class", "is-visible");
 		if (menuFlag === 1) {
 			mobileButton.addEventListener("click", menuClose, true);
