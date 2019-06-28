@@ -8,7 +8,7 @@
 }
 
 html {
-  width: 100%;
+  width: 99.99%;
   font-size: 1rem;
   /*background-image: url(../../david-clode-691484-unsplash.jpg);*/
   background-color: white;
@@ -18,7 +18,7 @@ html {
   font-family: Arial, Helvetica, cursive, Times New Roman, Oswald, sans-serif;
 }
 html body {
-  width: 100%;
+  /*width: 99.8%;*/
   padding: 0%;
   margin: 0%;
 }

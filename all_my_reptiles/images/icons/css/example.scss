@@ -51,14 +51,14 @@ $shadow-box: 1px 1px 10px;
 #sales {background-image: url(../../amphibians/zachary-spears-579010-unsplash.jpg);}
 
 html {
-	width: 100%;
+	width: 99.99%;
 	font-size: 1rem;
 	/*background-image: url(../../david-clode-691484-unsplash.jpg);*/
     @include background-props();
 	font-family: $font-stack;
 	
 	body {
-	  width: 100%;
+	  /*width: 99.8%;*/
 	  padding: 0%;
 	  margin: 0%;
   }
