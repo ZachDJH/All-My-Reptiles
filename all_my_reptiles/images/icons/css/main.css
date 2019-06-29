@@ -49,6 +49,7 @@ body {
     background-position: center;
   }
 }
+/*Navigation start*/
 @media screen and (min-width: 200px) and (max-width: 1200px) {
   #navbar li {
     display: none;
@@ -72,6 +73,41 @@ nav a {
   color: grey;
   height: 0.2%;
   margin: 0.9% 0 0 0;
+}
+
+.hamburger-wrap {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 100;
+}
+
+.mobile-bar-butt {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+.mobile-bar-butt div {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  height: 4px;
+}
+
+.mobile-bar-butt .bar-first {
+  top: 5px;
+  left: 5px;
+}
+
+.mobile-bar-butt .bar-second {
+  top: 20px;
+  left: 5px;
+}
+
+.mobile-bar-butt .bar-third {
+  top: 35px;
+  left: 5px;
 }
 
 #navbar {
@@ -117,7 +153,7 @@ nav a {
     text-shadow: 1px 3px 2px grey;
   }
 
-  span#mobile-bar-button {
+  div#mobile-bar-button {
     display: none;
   }
 
@@ -129,7 +165,7 @@ nav a {
   li#navbrand {
     display: inline;
     display: contents;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -139,35 +175,37 @@ nav a {
   }
 
   li#navbrand:hover {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-shadow: 1px 3px 2px grey;
   }
 
-  span#mobile-bar-button {
+  div#mobile-bar-button {
     display: contents;
+    /*
     display: flex;
     flex: initial;
     justify-content: flex-start;
     position: absolute;
     top: 15px;
     left: 10px;
-    /*margin-left: -3.5vw;*/
     flex-wrap: nowrap;
     flex-direction: row;
+    */
   }
 }
 @media screen and (min-width: 200px) and (max-width: 1200px) and (min-width: 600px) and (max-width: 800px) {
-  span#mobile-bar-button {
+  div#mobile-bar-button {
     display: contents;
+    /*
     display: flex;
     position: absolute;
     top: 15px;
     left: 10px;
     flex: initial;
     justify-content: flex-start;
-    /*margin-left: -9vw;*/
     flex-wrap: nowrap;
     flex-direction: row;
+    */
   }
 
   li#navbrand {
@@ -281,6 +319,7 @@ nav a {
     border-bottom: 2px solid black;
   }
 }
+/*End navigation*/
 .has-scroll {
   overflow-y: scroll;
   height: 250px;
