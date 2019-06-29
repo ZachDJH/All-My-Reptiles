@@ -340,7 +340,7 @@ div.space-box {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1088px) and (max-width: 1900px) {
+@media screen and (min-width: 1088px) and (max-width: 3000px) {
   #main-content {
     background-color: #ffffff;
     width: 70%;
