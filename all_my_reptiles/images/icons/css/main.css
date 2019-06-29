@@ -49,7 +49,7 @@ body {
     background-position: center;
   }
 }
-/*Navigation start*/
+/*Navigation*/
 @media screen and (min-width: 200px) and (max-width: 1200px) {
   #navbar li {
     display: none;
@@ -224,6 +224,7 @@ nav a {
     font-size: 0.8rem;
   }
 }
+/*Mobile menu */
 @media screen and (min-width: 200px) and (max-width: 1200px) {
   #mobile-nav-menu {
     display: flex;
@@ -244,15 +245,16 @@ nav a {
     transition: 0.5s;
     border-radius: 1px;
     font-size: 1.2rem;
-    margin-top: 40px;
-    width: 1%;
+    margin-top: 30px;
+    width: 10%;
     padding-bottom: 20px;
     justify-content: flex-start;
+    border: 2px solid black;
   }
 
   #mobile-nav-menu a {
     justify-content: center;
-    width: 1%;
+    width: 10px;
     margin: 1px 0 1px 0;
     height: 0px;
     border-bottom: 2px solid black;
@@ -276,7 +278,7 @@ nav a {
     margin-top: 0.4vh;
     box-shadow: 4px 4px 8px;
     width: 450px;
-    height: 440px;
+    height: 300px;
   }
 
   li#mobile-nav-menu a {
