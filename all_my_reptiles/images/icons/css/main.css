@@ -264,7 +264,7 @@ nav a {
     top: 0px;
   }
 }
-@media screen and (min-width: 200px) and (max-width: 1200px) and (orientation: landscape) {
+@media screen and (min-width: 200px) and (max-width: 1200px) and (orientation: landscape) and (min-width: 600px) {
   #mobile-nav-menu {
     display: flex;
     flex: 1;
@@ -276,8 +276,8 @@ nav a {
     list-style: none;
     margin-top: 0.4vh;
     box-shadow: 4px 4px 8px;
-    width: 450px;
-    height: 300px;
+    width: 350px;
+    height: 450px;
   }
 
   li#mobile-nav-menu a {
