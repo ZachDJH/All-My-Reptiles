@@ -837,12 +837,12 @@ div.space-box {
 	transform: scale(1.2);
 }
 
-.img-zoomout {
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+.img-zoomout > img {
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-ms-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	transform: scale();
 }
 
